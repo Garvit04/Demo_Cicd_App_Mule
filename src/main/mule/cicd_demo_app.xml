@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="b80f15aa-bd7c-45b6-929d-e694eebcd5d0" basePath="/Neosalpha" >
+		<http:listener-connection host="0.0.0.0" port="8081" />
+	</http:listener-config>
+	<http:request-config name="HTTP_Request_configuration" doc:name="HTTP Request configuration" doc:id="245806cf-503a-494e-ab58-0f86a7b91b2d" basePath="/api/v1" >
+		<http:request-connection host="dummy.restapiexample.com" />
+	</http:request-config>
+	<flow name="cicd_demo_appFlow" doc:id="372a206f-1265-40c0-82d4-2086f295f007" >
+		<http:listener doc:name="Listener" doc:id="83697cd8-a7d5-46cb-bfe0-ddd87be45881" config-ref="HTTP_Listener_config" path="/employees"/>
+		<http:request method="GET" doc:name="Request" doc:id="bdd67ee0-ff4f-43ac-9e6a-a586ce7e62c9" config-ref="HTTP_Request_configuration" path="/employees"/>
+	</flow>
+</mule>
