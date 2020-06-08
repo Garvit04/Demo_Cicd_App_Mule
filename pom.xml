@@ -27,7 +27,7 @@
 				<extensions>true</extensions>
 				<configuration>
 				<cloudHubDeployment>
-				<objectStoreV2>true</objectStoreV2> 
+				<objectStoreV2>false</objectStoreV2> 
 				<username>Garvit_Maheshwari4</username>
 				<environment>Sandbox</environment>
 				<applicationName>Employees-service</applicationName>
