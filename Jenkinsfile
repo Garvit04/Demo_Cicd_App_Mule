@@ -10,7 +10,7 @@ pipeline
   
    stage('Deploy_Cicd_Application'){
    steps{
-  bat 'mvn package deploy -DmuleDeploy'
+  bat 'mvn deploy -DmuleDeploy'
   }
   }
     stage('Testing_Cicd'){
