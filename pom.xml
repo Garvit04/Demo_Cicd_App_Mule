@@ -28,12 +28,12 @@
 				<configuration>
 				<cloudHubDeployment>
 				<objectStoreV2>true</objectStoreV2> 
-				<username>Garvit_Maheshwari4</username>
+				<username>DKNeos_20</username>
 				<environment>Sandbox</environment>
 				<applicationName>Employees-service</applicationName>
 				<workers>1</workers>
 				<workerType>Micro</workerType>
-				<password>Garvit44@</password>
+				<password>Mulesoft20</password>
 				<muleVersion>4.2.2</muleVersion>
 				</cloudHubDeployment>
 				</configuration>
