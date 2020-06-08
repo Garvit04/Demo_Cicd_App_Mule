@@ -15,7 +15,7 @@ pipeline
   }
     stage('Testing_Cicd'){
     steps{
-  bat 'newman run D:\\newman\\TimeZone-World.postman_collection.json --disable-unicode'
+  bat 'newman run D:\\newman\\Employee-API.postman_collection.json --disable-unicode'
   }
   }
   
