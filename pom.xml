@@ -26,14 +26,13 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
-				<cloudHubDeployment>
-				<objectStoreV2>true</objectStoreV2> 
-				<username>DKNeos_20</username>
+				<cloudHubDeployment> 
+				<username>Garvit_Maheshwari4</username>
 				<environment>Sandbox</environment>
 				<applicationName>Employees-service</applicationName>
 				<workers>1</workers>
 				<workerType>Micro</workerType>
-				<password>Mulesoft20</password>
+				<password>Garvit44@</password>
 				<muleVersion>4.2.2</muleVersion>
 				</cloudHubDeployment>
 				</configuration>
