@@ -14,8 +14,8 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-		<app.runtime>4.2.2-hf2</app.runtime>
-		<mule.maven.plugin.version>3.3.5</mule.maven.plugin.version>
+		<app.runtime>4.2.2</app.runtime>
+		<mule.maven.plugin.version>3.4.0</mule.maven.plugin.version>
 	</properties>
 
 	<build>
@@ -27,7 +27,7 @@
 				<extensions>true</extensions>
 				<configuration>
 				<cloudHubDeployment>
-				<objectStoreV2>false</objectStoreV2> 
+				<objectStoreV2>true</objectStoreV2> 
 				<username>Garvit_Maheshwari4</username>
 				<environment>Sandbox</environment>
 				<applicationName>Employees-service</applicationName>
